@@ -1,0 +1,6 @@
+Int - täisarvulise muutuja jaoks
+Double - kümnendmurrulise muutuja jaoks
+String - sõnaliste muutujate jaoks
+Boolean - andmetüüp väärtuste jaoks, kus ainsad võimalikud väärtused on TRUE või FALSE.
+Long - suurte arvude jaoks, kui int-st väheseks jääb.
+Char - muutuja ühe sümboli jaoks.
