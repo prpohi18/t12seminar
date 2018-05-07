@@ -1,3 +1,5 @@
+*JPA andmebaasi ühendumine Spring Boot veebirakenduse juures.
+
 JPA - Java Persistence API
 
 Muutmata konfiguratsioonis Spring Boot võimaldab JPA repositooriumi toetuse ja vaatab ise package’ite ja alam package’ite sisse kus @SpringBootApplication on märgitud.
