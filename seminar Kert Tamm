@@ -16,5 +16,4 @@ Entity Manager: kui mappingud on defineeritud, siis Entity Manager saab hallata 
 
 JPQL (Java Persistence Query Language) - Tagab võimaluse kirjutada päringuid otsimaks üksuseid. Oluline on mõista, et see on teistsugune võrreldes SQL päringutega.
 JPQL päringud saavad juba aru mappingutest üksuste vahel ja lisaks sellele saame ise lisada erinevaid lisatingimusi vajaduse korral.
-
-Criteria API - määratleb Java põhise API tegemaks otsinguid databaasis.
+Criteria API - määratleb Java põhise API tegemaks otsinguid andmebaasis.
