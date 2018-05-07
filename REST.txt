@@ -1,0 +1,15 @@
+HTML sidumine REST-teenusega XMLhttprequest
+
+REST-teenuse abil saab rakenduse siduda veebilehega.
+XMLHttpRequesti kasutataksegi rakenduse/serveri sidumiseks.
+
+XMLHttpRequest omadused:
+* Saab saata lehelt andmeid rakendusse
+* Saab vastu võtta andmeid rakendusest
+* On võimalik lehte uuendada ilma refreshita
+
+
+
+
+
+
