@@ -1,0 +1,15 @@
+Kõigepealt tuleks alustada ja importida vajalik moodul
+import javax.servlet.http.HttpSession;
+Siis tuleks luua endale mõni klass, näiteks lihtne kasutajanimi.
+public class User {
+	protected String name;
+	public River(String name) {
+		name = this.name
+	}
+}
+siis tuleks see objekt luua.
+User u1 = new User ("Albert");
+Lood sessiooni
+HttpSession session = request.getSession();
+salvestad objekti
+session.setAttribute("Kasutaja", u1);
