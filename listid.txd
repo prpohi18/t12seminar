@@ -1,0 +1,26 @@
+**Listide loomine**
+
+Et luua uus list, oleks vaja koodi kirjutata järgnev käsklus (listi nimi tuleb ise mõelda): "ArrayList s6brad = new ArrayList();"
+
+Et list oleks kindla suurusega, tuleks ka määrata listi tegemisel selle suurus: "ArrayList s6brad = new ArrayList(100);"
+
+Samuti on javas võimalik määrata ka listi klass, näiteks sõprade puhul võime luua listi, milles on ainult string sees: "ArrayList<String> s6brad = new ArrayList<String>();"
+
+**Listide kasutamine**
+
+Et lisada uude listi ka elemente, oleks meil vaja kasutada järgmisi käsklusi(juhul, kui objekte on mitu): 
+"ArrayList<String>s6brad = new ArrayList<String>();
+s6brad.add("Kati");
+s6brad.add("Juku");
+s6brad.add("Mati");
+s6brad.add("Joel");
+
+Kui sooviksite välja kuvada listis olevad elemente, oleks mõistlik luua teil "for" tsükkel, mis prindiks kõik elemendid välja. All olevas näites toome välja listi suuruse kasutades .size'i. Et välja tuua andmeid, kasutame .get'i.:
+"for (int i = 0; i < s6brad.size(); i++)
+	System.out.println(s6brad.get(i));"
+	
+Kui soovitakse näiteks kas eemaldada kogu list või mõni üksik objekt, siis tuleks kasutada järgmisi koodijuppe:
+
+"s6brad.clear();" <- Eemaldab listis olevad elemendid
+"s6brad.remove(0);" <- Eemaldab esimese listis oleva elemendi, kui soovitakse eemaldada mõni teine, oleks vaja number ära muuta. 
+"s6brad.remove("Mati");" <- Eemaldab elemendi "Mati". Sellist koodijuppi on mõistlik kasutada siis kui te ei tea listis oleva objekti asukohta. (Näiteks "Kati" asub listis esimesena, tema "number" on 0.
