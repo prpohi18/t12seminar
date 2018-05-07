@@ -1,0 +1,12 @@
+Massiivid on etteantud hulgaga listi loomine, kuhu annad sisse andmed.
+näiteks:
+double[] minuList = new double[10]; //siia massiiv on 10 kohaline - 0-9.
+
+näiteks:
+Isikukood[] isikukoodid=new Isikukood[2]; //annad ette palju kohti soovid kasutada
+		isikukoodid[0]=new Isikukood("49302055777"); //hakkad järjest iga numbri kohale sättima kindlat andmekogu.
+		isikukoodid[1]=new Isikukood("49712246666");
+
+Kasutamine:
+-Saab kasutada tsüklites,
+-üldised (kinnised listid).
