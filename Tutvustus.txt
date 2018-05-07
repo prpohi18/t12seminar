@@ -1,0 +1,9 @@
+***Klassi kasutamine staatiliste funktsioonide kogumikuna***
+
+Staatiline klass (Static method) on lühidalt öeldes klass, milles saab grupeerida klasse - kutsutakse välja teisi klasse.
+Kõige tavalisem staatiline meetod on main meetod. Meetod on omane ja ühtne kõigile klassi elementidele.
+Samas see tähendab ka, et tal endal pole juurdepääsuõigust elementidele, mis ei ole staatilised.
+
+Staatilised meetodid peavad teiste klasside objektide isenditele ligipääsemiseks kasutama objekti refereerimist (Objekt x = new Objekt())
+Kõige tavalisem staatilise meetodi kasutusvaldkond on staatiliste muutujatele ligipääsemine(klassiNimi.meetodiNimi(argumendid))
+Staatiliste meetodite kasutamine ei nõua uue objekti loomist.
