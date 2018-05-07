@@ -1,0 +1,14 @@
+Seda kasutavad Amazon, Yahoo, Google Search, Facebook, Ebay jne.
+
+REST on lühend väljendist "Representational State Transfer".
+See on meetod, et saada arvuteid omavahel suhtlema. REST erineb tesitest selle poolest, et selle abil saab saatav võimalikult vähe andmeid, ning on võrdlemisi modernne.
+
+See kirjeldab, kuidas välja jagatud andmeobjektid ja ressursid on defineeritud ja adresseeritavad. Ressursid on kättesaadavad URL kaudu, mille korral server saadab tagasi andmeid.
+
+REST toetab HTTP meetodeid, nagu PUT, DELETE, OPTIONS, HEAD, TRACE ja CONNECT. Kuid kõige tähtsam on POST, millega saab serverist informatsiooni küsida, ja GET, mille peale server tekitab ressursi ja ühendab selle URL'iga.
+
+REST on:
+-Eraldatud;
+-Olekuvaba;
+-Vahemäluga;
+-Nõudluspõhine.
