@@ -1,0 +1,8 @@
+Automaattestid
+Kasutatakse rakenduse töökindluse mugavamaks testimiseks.
+Rakenduse suurusest oleneb kui kaua automaattestide koostamine aega võtab.
+Kui rakenduse testimiseks on projektis vähe aega ei tasuks seda teha.
+Kui rakendus on väga väike, pole automaattestide koosatmine samuti mõistlik.
+eelised:
+1.Usaldusväärsus
+2. Taaskasutatvus
