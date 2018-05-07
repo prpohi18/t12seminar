@@ -1,0 +1,37 @@
+Andmepäringute koostamine liidesekäskude abil - järjestamine, filtreerimine
+
+
+Kasutada tuleb (data access object e DAO) liidest/objekti, mille abil saab andmeid andmebaasist
+
+
+public class Employee {
+
+    private int id;
+    private String name;
+
+
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+}
+
+interface EmployeeDAO {
+
+    List<Employee> findAll();
+    List<Employee> findById();
+    List<Employee> findByName();
+    boolean insertEmployee(Employee employee);
+    boolean updateEmployee(Employee employee);
+    boolean deleteEmployee(Employee employee);
+
+}
