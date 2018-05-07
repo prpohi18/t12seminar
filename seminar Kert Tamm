@@ -1,0 +1,18 @@
+JPA - Java Persistence API
+
+Muutmata konfiguratsioonis Spring Boot võimaldab JPA repositooriumi toetuse ja vaatab ise package’ite ja alam package’ite sisse kus @SpringBootApplication on märgitud.
+
+Seda on võimalik ehitada näiteks:
+Gradle’ga
+Maven’iga
+ja ka IDE’s
+
+JPA arenes mõttest, et kuidas mappida objektid otse tabelite külge.
+JPA lubab mappida aplikatsiooni klassid tabelitega andmebaasis.
+
+Entity Manager: kui mappingud on defineeritud, siis Entity Manager saab hallata sinu üksusi. Entity Manager haldab kõiki suhtusi andmebaasiga.
+
+JPQL (Java Persistence Query Language) - Tagab võimaluse kirjutada päringuid otsimaks üksuseid. Oluline on mõista, et see on teistsugune võrreldes SQL päringutega.
+JPQL päringud saavad juba aru mappingutest üksuste vahel ja lisaks sellele saame ise lisada erinevaid lisatingimusi vajaduse korral.
+
+Criteria API - määratleb Java põhise API tegemaks otsinguid databaasis.
