@@ -1,3 +1,3 @@
-Konto seisu kontroll ja muutmine
+Andmete muutmist lubava klassi eksemplari kasutamine
 
 Ühes failis saab anda käske teises failis oleva info kontrollimiseks ja muutmiseks.
