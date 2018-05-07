@@ -1,0 +1,5 @@
+Automaattestid koodi muutmise juures
+
+Automaattest on koodijupp, mis testib rakenduse vana ja uut funktsionaalsust.
+Testitakse koodi, et tagada programmi ootuspärane käitumine
+Saab käivitada ainult testid või saab panna koodi kompileerima ja testid käivitatakse koos sellega
