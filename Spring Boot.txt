@@ -1,0 +1,6 @@
+Spring boot loomiseks on vajalik pom.xml fail, mis sisaldab infot, kuidas veebirakendus üles ehitada ja mida see sisaldab 
+(näiteks andmebaasiühendust, automaatteste). Vajalik on mvn package käsu kasutamine, mis ehitab veebirakenduse vastavalt 
+pom.xml-is olevale sätetele. See tekitab target folderi. Java kirjutamiseks tuleb sinna juurde teha folder src -> main -> 
+java -> package nimi -> ja lõpuks sinna sisse java fail. Kui java kood kirjutatud peab käivitama käsu mvn package, et kood 
+kompileerida ja peale seda kasutada käsku java -jar -Dserver.port=40310 target/boot3-1.0-SNAPSHOT.jar. Kiiremaks kompileerimiseks 
+saab ka kasutada käsku mvn compile. Java koodis peab main rakenduses olema rida SpringApplication.run(Rakendus.class, args);.
