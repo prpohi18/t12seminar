@@ -1,0 +1,14 @@
+* Oma täiendava(te) klassi(de) kasutamine veebilahenduse juures joone punktide arvutamisel y=ax+b valemiga
+
+Aluseks võtsin 6.kodutöö.
+1)Javas teeksin klassi, kuhu kirjutan y=ax+b valemi:
+
+public class lineaarfun {
+	@RequestMapping("/lineaar")
+	double arvutamine(double a, double x, double b){
+		return a * x + b;
+	}
+	
+Html failis teeksin funktsiooni arvutamiseks ja vastuse kuvamiseks, selle jaoks lisan kastid, kus kasutaja saab sisestada
+a, x ja b väärtused, nupp arvutamiseks ja kast vastuse kuvamiseks.
+Kõike seda kuvaksin herokus.
