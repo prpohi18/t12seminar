@@ -1,0 +1,5 @@
+Java üks kõige olulisemaid kasutusvaldkondi veebirakenduste programmeerimine ja selle põhjuseks on eelkõige
+sõltumatus platvormist ja standardiseeritud teekide rohkus.
+
+Java faile käivitatakse serveris käsurealt ja käivitada saab neid klasse, milles leidub klassimeetod.
+Java lähtekood kompileeritakse baitkoodi, mida oskab käivitada iga Java virtuaalmasin.
