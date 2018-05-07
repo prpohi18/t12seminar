@@ -1,0 +1,8 @@
+Klassid muudavad arusaadavamaks ja on rohkem orienteeritud
+Pikk kood muutub kompaktseks tänu mitme faili kasutamisele
+Mitu inimest saab korraga töötada ühe projekti kallal
+Klasse on võimalik erinevates projektides kasutada
+
+
+Koodi leidmiseks võib aega minna ning otsida tuleb mitmest failist
+Pikad klassinimed
