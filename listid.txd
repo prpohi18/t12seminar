@@ -4,7 +4,7 @@ Et luua uus list, oleks vaja koodi kirjutata järgnev käsklus (listi nimi tuleb
 
 Et list oleks kindla suurusega, tuleks ka määrata listi tegemisel selle suurus: "ArrayList s6brad = new ArrayList(100);"
 
-Samuti on javas võimalik määrata ka listi tüüpi, näiteks sõprade puhul võime luua listi, milles on ainult string sees: "ArrayList<String> s6brad = new ArrayList<String>();"
+Samuti on javas võimalik määrata ka listi klass, näiteks sõprade puhul võime luua listi, milles on ainult string sees: "ArrayList<String> s6brad = new ArrayList<String>();"
 
 **Listide kasutamine**
 
