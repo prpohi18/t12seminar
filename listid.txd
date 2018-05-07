@@ -19,7 +19,7 @@ Kui sooviksite välja kuvada listis olevad objektid, oleks mõistlik luua teil "
 "for (int i = 0; i < s6brad.size(); i++)
 	System.out.println(s6brad.get(i));"
 	
-Kui soovitakse näiteks kas eemaldada kogulist või mõni üksik objekt, siis tuleks kasutada järgmisi koodijuppe:
+Kui soovitakse näiteks kas eemaldada kogu list või mõni üksik objekt, siis tuleks kasutada järgmisi koodijuppe:
 
 "s6brad.clear();" <- Eemaldab listis olevad objektid
 "s6brad.remove(0);" <- Eemaldab esimese listis oleva objekti, kui soovitakse eemaldada mõni teine, oleks vaja number ära muuta. 
