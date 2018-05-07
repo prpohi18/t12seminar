@@ -1,0 +1,33 @@
+* HTML-lehe sidumine REST-teenusega XMLHttpRequesti abil
+
+*XMLHttpRequest (XHR) on rakendusliides, mida kasutatakse, et vahendada andmeid veebibrauseri ja veebiserveri vahel.
+*Suhtlus brauseri ja serveri vahel toimub objekti meetodite kaudu.
+*Objekti loob brauserisse JavaScripti keskkond. Andmete saamine XHR-i kaudu eesmärgiga muuta juba laetud veebilehte on Ajaxi aluspõhimõte. 
+REST-teenuse abil saab rakenduse siduda veebilehega.
+XMLHttpRequesti kasutataksegi rakenduse/serveri sidumiseks.
+
+XMLHttpRequest omadused:
+* Saab saata lehelt andmeid rakendusse
+* Saab vastu võtta andmeid rakendusest
+* On võimalik lehte uuendada ilma refreshita
+
+<script>
+  let xhr=new XMLHttpRequest();
+	xhr.onreadystatechange=showAnswer;
+	function kmi(){
+		let query="weight="+document.getElementById("box1").value+"&length="+document.getElementById("box2").value;
+		xhr.open("GET", "kmi?"+query, true);
+		xhr.send(true);
+	}
+	
+	function showAnswer(){
+		if(xhr.readyState==4){
+			document.getElementById("answer").innerHTML=xhr.responseText;
+		}
+	}
+	</script>
+
+
+
+
+
