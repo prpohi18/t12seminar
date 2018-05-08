@@ -1,0 +1,15 @@
+Spring boot jaoks vajalikud failid:
+pom.xml
+
+src- main->	-java- (projekti nimi) - nimi.java
+	->	-resources - public  - fail.html
+target- 1)boot3-10-SNAPSHOT.jar, BOOT3-1.0-SNAPSHOT.jar.original
+	2)*classes
+	3)*maven-archiver
+	4)*maven-status
+	5)*generated-sources
+
+Tegevused: 
+Putty: ->mvn package
+	->java -jar -Dserver.port=40383 target/boot3-1.0-SNAPSHOT.jar
+
