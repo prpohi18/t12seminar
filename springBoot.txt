@@ -23,6 +23,7 @@ STRUKTUUR:
 |   |   |   |   |   |   +--- helloworld/
 |   |   |   |   |   |   |   +--- HelloWorldApplicationTest.java
 +--- pom.xml
++--- target/
 
 
 
