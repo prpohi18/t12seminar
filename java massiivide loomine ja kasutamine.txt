@@ -1,0 +1,21 @@
+Massiiv
+--------
+
+Massiiv (array) on järjestatud andmete kogum. Javas saab massiiv koosneda ainult sama tüüpi elementidest.
+
+Iga element massiivis on nummerdatud. Esimese elemendi indeks on 0, teise elemendi indeks on 1 jne. Igale konkreetsele elemendile viitamiseks saab kasutada tema indeksit massiivis. Üldisemal juhul võib indekseid olla ka rohkem kui üks - sellisel juhul on tegemist mitmemõõtmelise massiiviga. Mitmemõõtmelise massivi juhul on massiivi elementideks omakorda massiivid.
+Massiivil on kindel pikkus, st kui mitu elementi massiivi maksimaalselt mahub. Massiivi pikkust ei saa muuta.
+
+
+Massivi leidmine
+-----------------
+
+Kui me soovime näiteks luua täisarvude massiivi someNumbers, siis saaksime selle deklareerida nii:
+int[] someNumbers = new int[10];
+Sellisel juhul on massiivi elemendi tüüp int (täisarv).
+
+Massiivi pikkuse leidmiseks saab kasutada: int len = someNumbers.length;
+
+Massiivi on võimalik luua ka algväärtustatult:
+int[] someNumbers = {10, 20, 33, 47, 99, 101};
+String[] someWords = {"Hello", "new", "array"};
