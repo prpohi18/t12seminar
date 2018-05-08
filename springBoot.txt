@@ -1,0 +1,56 @@
+Spring boot on java raamistikud, mis võimaldavad väga minimaalse koodi abil koostada veebiliideseid oma java programmile.
+
+
+STRUKTUUR:
+
++--- src/
+|   +--- main/
+|   |   +--- java/
+|   |   |   +--- com/
+|   |   |   |   +--- springhow/
+|   |   |   |   |   +--- example/
+|   |   |   |   |   |   +--- helloworld/
+|   |   |   |   |   |   |   +--- HelloWorldApplication.java
+|   |   +--- resources/
+|   |   |   +--- application.properties
+|   |   |   +--- static/
+|   |   |   +--- templates/
+|   +--- test/
+|   |   +--- java/
+|   |   |   +--- com/
+|   |   |   |   +--- springhow/
+|   |   |   |   |   +--- example/
+|   |   |   |   |   |   +--- helloworld/
+|   |   |   |   |   |   |   +--- HelloWorldApplicationTest.java
++--- pom.xml
+
+
+
+
+
+KOODINÄIDE:
+
+package hello;
+
+import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+
+@Controller
+@EnableAutoConfiguration
+public class SampleController {
+
+    @RequestMapping("/")
+    @ResponseBody
+    String home() {
+        return "Hello World!";
+    }
+
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(SampleController.class, args);
+    }
+}
+
+
+Putty: java -jar -Dserver.port=40300 target/boot3-1.0-SNAPSHOT.jar
