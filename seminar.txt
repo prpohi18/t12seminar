@@ -1,0 +1,13 @@
+Java lihtandmetüübid
+
+byte - täisarv (1 bait) - kasulik mälu kokkuhoidmiseks suurtes listdes
+short - täisarv (2 baiti) - samuti kasulik mälu kokkuhoidmiseks suurtes listdes
+int - täisarv (4 baiti) - enamasti kasutusel
+long - täisarv (8 baiti) - kasutatakse kui on vaja suuremaid väärtusi kui võimaldab int
+float  murdarv (4 baiti) - kasutatakse mälu kokkuhoidmiseks, ei tohiks kasutada kui vaja täpseid väärtusi
+double murdarv(8 baiti) - murdarvude korral võiks pigem seda kasutada
+char - Unicode'i tähemärk (2 baiti) 
+boolean - tõeväärtused
+
+
+Muutujal konkreetne väärtus. Andmetüüp määrab ära, milliseid väärtuseid see võib sisaldada ning mis toiminguid nendega teha saab. Kirjutatakse väikese algustähega. 
