@@ -1,0 +1,13 @@
+Andmeid sisaldava klassi eksemplari kasutamine Isikukoodi näitel
+
+Andmed sisestatakse klassi isikukood abil. Kui keegi sisaldab oma isikukoodi, siis kohe saab kontrollida kas see on mees või naine (Esimene number 3,5 - mees, 4,6 - naine) ja veel saab kontrollida inimese sünnipäeva. Teine ja kolmas number tähendab aasta ja kui esimene number on 3 või 4 siis on 20 sajandi aasta, kui on 5 või 6 siis on 21 sajandi aasta, neljas ja viies number näitab mis kuus inimene on sündinud, kuues ja seitsmes number tähendab kuupäeva. Aga viimased 4 numbrid on unikaalsed ja mingi infot ei sisalda.
+
+
+
+public class Isikukood {
+        public String sugu;
+		public int sunniaasta;
+		public int sunnikuu;
+		public int sunnipaev;
+}
+
