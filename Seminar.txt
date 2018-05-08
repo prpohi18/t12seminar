@@ -1,0 +1,8 @@
+Objektorienteerituse head ning tülikad küljed
+Ei tohi koodi kopeerida vaid tuleb terviku moodustavad käsud ühte meetodisse koondada ning see siis igas vajalikus kohas kas otse või teiste meetodite kaudu välja kutsuda
+Igal toimingul on oma kindel koht, saab selle toiminguga seotud vea kergesti üles leida .
+Mitu inimest saab korraga töötada projekti üle . 
+Pikkad klassinimed
+Klasse on võimalik erinevates projektides kasutada.
+Koodi leidmiseks võttab aega sest peab otsima  mitmest failist. 
+
