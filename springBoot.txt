@@ -1,4 +1,4 @@
-Spring boot on java raamistikud, mis võimaldavad väga minimaalse koodi abil koostada veebiliideseid oma java programmile.
+Spring boot on java raamistik, mis võimaldab väga minimaalse koodi abil koostada veebiliideseid oma java programmile.
 
 
 STRUKTUUR:
