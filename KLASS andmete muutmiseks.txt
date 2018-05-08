@@ -1,0 +1,128 @@
+	 - ANDMED
+public class Andmed {
+    protected double x;
+    protected double y;
+    protected double dx;
+    protected double dy;
+    protected double dt;
+    
+    public Andmed(double x, double y){
+       this.x=x;
+       this.y=y;
+    }
+    public Andmed(double t){
+        this.dt=t;
+    }
+	 - ASUKOHA MÄÄRAMINE
+public double getR(){
+        if(y>x){
+            return((y-x)/2);
+        }else if(x>y){
+            return((x-y)/2);
+        }else{
+            return 0;
+        }
+    }
+public double kaugusNullist(){
+        return Math.sqrt(x*x+y*y);
+    }
+public void sammuAndmed(double dx, double dy){
+        this.dx=dx; this.dy= dy;
+    }
+
+public void sammuNurgaAndmed(double nurk, double sammupikkus){
+        this.sammuAndmed(sammupikkus*Math.cos(Math.toRadians(nurk)),
+        sammupikkus*Math.sin(Math.toRadians(nurk)));
+    }
+	
+public void liigu(){
+        x+=dx; y+=dy;
+    }
+public double getX(){return x;}
+public double getY(){return y;}
+public double getT(){return dt;}
+public double kaugusPallist(Andmed teine){
+        double dx=getX() - teine.getX();
+        double dy=getY() - teine.getY();
+        return Math.sqrt(dx*dx+dy*dy);
+    }
+public boolean puutuja(Andmed teine){
+        if (kaugusPallist(teine) <= getR() + teine.getR()){
+            return true;            
+        }else{
+            return false;
+        }
+    }
+    @Override
+    public String toString(){
+    return "Rakett on koordinaatidel  ("+x+", "+y+", kiirus "+dx+" "+dy+")";
+    }   
+    
+}
+
+/////////////////////////////////////////////////////////////
+
+public class Konto{
+	protected String kontonr;
+	public static final String kontokaust="kontod/";
+	public Konto(String kontonr){
+		this.kontonr=kontonr;
+		looKonto();
+	}
+	 -- ANDMETE SISSE LUGEMINE
+	protected String kontoFailiNimi(){
+		return kontokaust+kontonr+".txt";
+	}
+	 - VÄÄRTUSTAMINE
+	protected void looKonto(){
+		if(!kasOlemas()){
+			kirjutaSumma(0);
+		}
+	}
+	 - FAILIST LUGEMINE
+	public int loeSumma(){
+		try{
+			BufferedReader br=new BufferedReader(new FileReader(kontoFailiNimi()));
+			int summa=Integer.parseInt(br.readLine());
+			br.close();
+			return summa;
+		} catch (Exception ex){
+			ex.printStackTrace();
+		}
+		return -1;
+	}
+	public boolean kirjutaSumma(int eurod){
+		try{
+				PrintWriter pw=new PrintWriter(new FileWriter(kontoFailiNimi()));
+				pw.println(eurod);
+				pw.close();
+				return true;
+			} catch(Exception ex){
+				ex.printStackTrace();
+			}
+			return false;
+	}
+	 - ANDMETE MUUTMINE <-----
+	public int lisaSumma(int eurod){
+		-> sisestatakse int tüüpi väärtus, tingimus et ei saa olla negatiivne
+		if(eurod<0){throw new RuntimeException("negatiivne summa");}
+		
+		-> loetakse sisse mingi väärtus loeSumma() meetodi kaudu (tekstifailist)
+		int sisu=loeSumma();
+		
+		-> Sisse loetud väärtusele liidetakse otsa sisestatud int tüübi väärtus
+		sisu+=eurod;
+		
+		-> Uus väärtus kirjutatakse faili sisse ümber
+		kirjutaSumma(sisu);
+		
+		-> meetod väljastab lõplikult uue väärtuse
+		return sisu;
+	}
+	 public int eemaldaSumma(int eurod){
+        int sisu=loeSumma();
+        sisu-=eurod;
+        kirjutaSumma(sisu);
+        return sisu;
+    }
+}
