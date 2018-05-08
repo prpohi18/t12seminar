@@ -1,0 +1,23 @@
+Tund 12 - Seminar
+
+Teema: REST-teenus
+REST (Representational State Transfer) on tarkvaraarhitektuuri stiil, mida kasutatakse hüpermeedia hajussüsteemide valdkonnas, näiteks veebis.
+REST-i puhul saab igast teenusest rääkida kui eri rakenduse seisundist, millele vastab kindel URI(Uniform Resource Identifier).
+Iga URI puhul saab kasutada nii GET kui POST käske, millest esimest kasutatakse siis, kui tahetakse midagi serveri poolt kätte saada, teist aga siis, kui on vaja serverile midagi saata, mis omakorda neid siis edasi töötleb. 
+
+Lineaarfunktsioon ax+b = 0
+POST-iga saab sisestada andmeid, sel juhul siis arvud(nii negatiivsed, kui ka positiivsed) -  a;b ja kordaja x. 
+GET-i ning locationiga on võimalik andmed üles leida.
+PATCH-iga saab andmeid muuta. Nt. muutes ainult a väärtust, jäävad teised andmed samaks.
+PUT-iga saab muudetud andmed serverisse saata
+REST - lõpuks peab funktsiooni lisama XML faili (omavaheliste andmete saatmiseks)
+JAVA faili importimiseks on vaja package käsku "package com.sap.formsprocessing.rest;" 
+REST kliendi loomine: 
+
+public static void main(String[] args) {
+		RestClient restClient = new RestClient();
+		String response = restClient.callService();
+		System.out.println(response);
+}
+
+	
