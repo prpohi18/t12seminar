@@ -1,0 +1,3 @@
+Javat kasutatakse praktiliselt kõikjal. Javat leidub mobiilirakendustes, täpsemalt Androidi rakendustes, pilveteenustes. Rakendatakse ka mängudes, 
+erinevates veebirakendustes, finantsmaailmas leiab Javat aktsiatega kaubandamisega tarkvaras ja suurfirmade serverirakendustes.
+Java programme on võimalik käivitada serveri käsurealt.
