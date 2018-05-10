@@ -57,10 +57,11 @@ public class Kilpkonn {
         System.out.println(konn.kysiSuund());
         konn.edasi();
         // Peaks algses kohas tagasi olema
-        System.out.println("Asukoht x = " + konn.kysiX() + "; y = " + konn.kysiY());
-        
-        
-        
-             
+        System.out.println("Asukoht x = " + konn.kysiX() + "; y = " + konn.kysiY());   
     }
 }
+
+// 2
+// 1
+// 3
+// Asukoht x = 1; y = 1
