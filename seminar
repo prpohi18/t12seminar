@@ -1,0 +1,19 @@
+Oma täiendava(te) klassi(de) kasutamine veebilahenduse juures joone punktide arvutamisel y=ax+b valemiga
+
+
+Luuakse kaks (või rohkem) klassi
+1) Esimesse klassi lisatakse arvude andmed
+2) Teine klass on võrrandi arvutamiseks
+
+*public või private juurdepääsu aste, et klassid saaksid omavahel "suhelda"
+
+------------------------------------------------------------
+            | Class | Package | Subclass | Subclass | World
+            |       |         |(same pkg)|(diff pkg)| 
+————————————+———————+—————————+——————————+——————————+———————
+public      |   +   |    +    |    +     |     +    |   +     
+————————————+———————+—————————+——————————+——————————+———————
+protected   |   +   |    +    |    +     |     +    |        
+————————————+———————+—————————+——————————+——————————+————————
+private     |   +   |         |          |          |    
+------------------------------------------------------------
