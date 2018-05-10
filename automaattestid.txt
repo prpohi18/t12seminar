@@ -1,0 +1,8 @@
+automaattestid rakenduse kavandamse juures
+
+automaattestid, kasutab manuaalse testimise asemel, 
+mugavam viis töökindluse testimiseks
+vähendavad inimese vajadust korduvate testide tegemiseks,
+usaldusväärne,
+korratav,
+põhjalik,
