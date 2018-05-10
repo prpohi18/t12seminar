@@ -1,10 +1,10 @@
 Spring jaoks vajalikud failid:
 
-pom.xml fail, info kuidas veebileht ¸lesehitada
-java jaoks on vaja teha folder -> src -> main -> java -> package nimi -> java fail
- 					      -> resources -> public  -> html fail(id)	
+pom.xml fail, info kuidas veebileht √ºlesehitada
+java jaoks on vaja teha Source packages -> package nimi -> java fail
+ 			other sources -> src -> main -> resources -> public  -> html fail	
 
-n‰ide: 
+n√§ide mis l√§heb java faili: 
 package springalgus;
 
 import org.springframework.boot.SpringApplication;
