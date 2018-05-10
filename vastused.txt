@@ -1,0 +1,41 @@
+* Andmepäringute koostamine liidesekäskude abil - järjestamine, filtreerimine
+
+
+Spring Boot on nagu vahelüli java ja andmebaasi vahel, millega saab andmebaasi java külge haakida.
+Spring Booti kasutamiseks, et andmebaasiga suhelda on tarvis järgmisi faile: DAO ja application.properties 
+
+
+
+Kasutada tuleb (data access object e DAO) liidest/objekti, mille abil saab andmeid andmebaasist.
+
+public class Opilane {
+  protected int id;
+  protected String name;
+
+
+  public int getId() {
+    return id;
+  }
+  
+  public void setId(int id) {
+  this.id = id;
+  }
+  
+  public String getName() {
+  return name;
+  }
+
+  public void setName(String name) {
+  this.name = name;
+  }
+}
+
+interface OpilaneDAO {
+  List<Opilane> findByName(); // sort?
+  List<Opilane> findById();
+  List<Opilane> addFilter(); // pole kindel, vb see mingie ri sorteerimise jaoks
+}
+
+
+
+
