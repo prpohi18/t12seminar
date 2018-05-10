@@ -1,0 +1,57 @@
+Linked list: 
+1) Koostamine:
+node addNode(node head, int value){
+   node temp,p;// declare two nodes temp and p
+   temp = createNode();//createNode will return a new node with data = value and next pointing to NULL.
+   temp->data = value; // add element's value to data part of node
+   if(head == NULL){
+       head = temp;     //when linked list is empty
+   }
+   else{
+       p  = head;//assign head to p 
+       while(p->next != NULL){
+           p = p->next;//traverse the list until p is the last node.The last node always points to NULL.
+       }
+       p->next = temp;//Point the previous last node to the new node created.
+   }
+   return head;
+
+}
+
+Selgitus:
+=List koosneb node-idest ning nende väärtustest.
+
+
+![Alt Text](https://puu.sh/AjrMG/21a7d2467b.pn)
+
++Võimaldab elemente kiiremini lisada ning kustutada node-ide abil ilma listi ümbertõstmata.
+-Kasutab rohkem mälu kui massiiv, sest muutujad on salvestatud läbi viitade.
+-Viidad tuleb järjest läbi käia, et saada muutujat kätte.
+-Võib võtta kauem aega, et element kätte saada.
+-Listis tagurpidi tagasi tulla võtab rohkem mälu kui listil on olemas ka "back-pointerid".
+
+
+
+Array list:
+1) Koostamine:
+int[] array = {1,2,3}; // Can't add another entry.
+
+ArrayList<Integer> arrayList = new ArrayList<>();
+arrayList.add(1);
+arrayList.add(2);
+arrayList.add(3);
+
+arrayList.add(4); // Dynamic in size
+}
+
+
+Selgitus:
+=Koosneb mitmetest väikestest massiividest(mis sisaldavad aadresse ja väärtusi).
+=Tuleb määrata massiivis sisaldavate elementide tüüp, et saaks neid hästi kasutada. (integer,string)
+=Hea kasutada kui tead mitut elementi sul massiiv sisaldab ning mitut elementi sul vaja kätte saada on.
+
+-Võtab rohkem mälu ning aega et opereerida.
+
++Võimalik teha rohkem funktsioone
+
+
