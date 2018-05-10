@@ -1,0 +1,11 @@
+HttpSessioni abil objekti(de) meeles pidamine brauserisessiooni vältel.
+Logides sisse kasutatakse sisselogimistunnust ja siis salvestatakse sessiooniparameeter. 
+Kui teistel lehekülgedel on antud sessiooniparameeter olemas, siis on sisse logitud, mis annab juurdepääsu kõikidele valikutele mis on mõeldud sisselogitud kasutajatele.
+Brauser hoiab ajutiselt mälus loodud java objekti. Tuvastatakse kasutaja andmebaasi andmete järgi ja siis jäetakse httpsessioni abil meelde.
+Seetõttu saab liikuda ühelt leheküljelt teisele ilma, et peaks igakord uuesti sisse logima.
+
+Näiteks:
+HttpSession session = request.getSession(); //alustab sessiooni, kui seda pole tehtud
+Object obj = new Object(); // loob uue objekti
+session.setAttribute(“object”, obj); // lisab sessiooni siseselt objekti
+
