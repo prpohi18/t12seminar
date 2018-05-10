@@ -20,7 +20,8 @@ node addNode(node head, int value){
 
 Selgitus:
 =List koosneb node-idest ning nende väärtustest.
-https://puu.sh/AjrMG/21a7d2467b.png
+
+![Link](https://puu.sh/AjrMG/21a7d2467b.png)
 +Võimaldab elemente kiiremini lisada ning kustutada node-ide abil ilma listi ümbertõstmata.
 -Kasutab rohkem mälu kui massiiv, sest muutujad on salvestatud läbi viitade.
 -Viidad tuleb järjest läbi käia, et saada muutujat kätte.
