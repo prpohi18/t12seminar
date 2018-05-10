@@ -1,0 +1,20 @@
+Kasutusvaldkonnad
+
+1.android tarkvara
+2.Serveripoolsed lahendused (tihit majanduses)
+3.Java veebirakendused (Reklaam, E-kommerts, Tervishoid)
+4.Paljud Tarkvaraarendus tööriistad on ehitatud Javaga
+5.Börsi rakendused ehitatakse Javaga.
+6.Nõrgadel masinatel nt IOT
+7.Big Data (Apach HBase Accumulo)
+8.Teaduslikud kasutusviisid
+9.Kunagi J2ME tarkvara (Telefonid, Blue Ray playeryd, DigiBox)
+=============================================================
+
+Käivitamise moodused
+
+Java tööks on vaja jar-java faili ja kompilaatori
+Tavaliselt kasutakse Java käivitamiseks JRE. Mis on saadav Mac, Windows ,Solaris, Linux.
+1.Laeb klasse
+2.Byte koodi tõestamine
+3.Interpretaator-käivitab byte koodi
