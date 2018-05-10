@@ -1,0 +1,11 @@
+Objektorienteerituse head ning tülikad küljed
+Head:
+1) Koodi on kergem "säilitada", saab kergesti ligi kui on vaja midagi muuta
+2) Mitu inimest saab töötada ühe koodi kallal.
+3) Saab kasutada erinevates projektides vähe muutmata või üldse mitte.
+4) Kiire arendus.
+
+Halvad:
+1) See võib tekitada suures koguses ebavajalikku koodi
+2) Võib olla ebaefektiivne, kuna koodi suurus võib liiga suureks minna, mis tähendab, et on aeglasem.
+3) Peab hästi läbi mõeldud olema, kui pole väga korralikult tehtud, siis ei pruugi see kasuks tulla nii palju kui taheti.
