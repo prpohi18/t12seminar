@@ -1,0 +1,29 @@
+HttpSessioni abil objekti(de) meeles pidamine brauserisessiooni vältel
+
+HttpSession tekitab ühenduse HTTP kliendi ja HTTP serveri vahel mingiks teatud ajaks.
+Tuvastab kasutajat ja salvestab ta tegevust erinevate veebilehtede külastamisel ja päringute tegemisel, kasutades näiteks kas cookie'sid või URLe üle kirjutades.
+HTTP klient pärib edastusohje protokolli (TCP e Transmission Control Protocol) kaudu ühenduse tekitamist teatud serveri pordiga (kõige tüüpilisem näiteks 8080). 
+HTTP server, mis "kuulab" neid päringuid ootab kliendi edasi antud infot. Saades vastava sõnumi, server vastab staatusega (nt. kas kasutaja lubas cookie'd või mitte).
+Tuvastab kasutajat ja salvestab ta tegevust erinevate veebilehtede külastamisel ja päringute tegemisel, kasutades näiteks kas cookie'sid või URLe üle kirjutades.
+See tekitab iga kasutaja külastusel eraldi ID kasutajate eristamiseks.
+
+HttpSession lubab servlettidel:
+- näha ja muuta infot sessiooni kohta
+- seob objekte sessiooniga lubades infol kasutaja kohta püsima jääda. 
+
+Näide: 
+1. Alustamiseks on vaja importida vajalik moodul
+import javax.servlet.http.HttpSession;
+2. Klassi loomine
+public class User {
+	protected String name;
+	public River(String name) {
+		name = this.name
+	}
+}
+3. Objekti loomine
+User u1 = new User ("Albert");
+4. Sessiooni loomine
+HttpSession session = request.getSession();
+5. Objekti salvestamine
+session.setAttribute("Kasutaja", u1);
