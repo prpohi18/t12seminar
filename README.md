@@ -10,6 +10,7 @@ Konstruktor on kood, mis käivitatakse vaikimisi hetkel kui uus objekt luuakse. 
 Objekti loomine toimub märksõnaga new.
 
 Juurdepääsuõigused:
+
 Private - saab ligi ainult sama klassi seest, kuid mujalt mitte
 Protected - saab ligi nii klassi, package kui alamklassi sees, kuid väljast (veebist) ei saa
 Public - igalt poolt saab ligi, ka väljast
