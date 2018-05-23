@@ -1,0 +1,29 @@
+1) Rest-teenuse loomuine lineaarvõrrandit ax+b=0 lahendava veebiaadressi näitel
+
+@RequestMapping("/rest")
+public void rest(){
+
+	@GetMapping("/arvuta")
+	public String arvutus(double a, double b){
+		double vastus = a/(-b);
+		String returnValue = "x="+vastus.ToString();
+		return returnValue;
+	}
+
+}
+
+www.veebileht.ee/rest/arvuta?a=2.0&b=-4.0 väljastab "x=2"
+
+2) HTML-lehe sidumine REST-teenusega XMLHttpRequesti abil
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // kui dokument on valmis
+       document.getElementById("väljund").innerHTML = xhttp.responseText;
+    }
+};
+xhttp.open("GET", "/rest/arvuta?a=2.0&b=-4.0", true);
+xhttp.send();
+
+<div id="väljund">x=2</div>
