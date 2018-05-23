@@ -1,0 +1,27 @@
+//HTML-lehe sidumine REST-teenusega XMLHttpRequesti abil:
+
+//Lehe laadimise lõpetamisel käivitub javascripti funktsioon mis küsib javalt infot
+document.addEventListener("DOMContentLoaded", function(event) {
+    getInfo.open("GET", "loadInfo" , true)
+    getInfo.send(true)
+});
+
+//Kui Ready state muutub ehk eelnev funktsioon on infot javalt vastu saanud, käivitub kättesaadud info näitamine
+let getInfo = new XMLHttpRequest()
+getLInfo.onreadystatechange = showInfo
+
+//Funktsioon käivitub siis kui ready state on 4 ehk korras
+function showInfo(){
+    if (getInfo.readyState == 4) {
+        //Kood mis paneb kättesaadud nfo kuhugi HTML lehele
+    }
+}
+
+/*
+@RestController
+@SpringBootApplication
+@RequestMapping("/loadInfo")
+String loadInfo(){
+    return "info";
+}
+*/
