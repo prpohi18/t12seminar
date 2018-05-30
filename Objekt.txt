@@ -1,0 +1,27 @@
+Objektorienteerituse head ning tülikad küljed
+
+Java keelega saab luua objekte, mis hoiavad enda sees muutujaid, omadusi ning funktsioone. Neid objekte saab luua, kustutada ning välja kutsuda. 
+
+Näiteks kui on projekt koolist, millel on õpetaja objekt, siis see objekt võib koosneda: 
+õpetaja omadustest(nimi, tel nr, palk jne),
+õpetaja enda funktsioonidest, mida saab ainult välja kutsuda õpetaja objekt.
+
+Sammuti saab ka luua õpilaste objekte ning igale õpilase viitab üks õpilase objekt, õpilastel on enda funktsioonid ning muutujad.
+
+Head küljed:
+säästab koodi ridu nii disaini poolest kui ka programmi jooksmise poolest
+kirjutatud koodi saab lihtsalt uuesti kasutada
+saab keelata/lubada teatud objekti funktsioone programmi jooksmisel
+
+Tülikad:
+Alati ei pruugi olla terve kood kasutuses
+objekt orienteeritud programm ei pruugi olla sama kiire kui tavaline.
+
+class Person
+{
+private:
+    int age;
+ 
+public:
+    int getAge() { return age; }
+};
